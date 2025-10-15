@@ -1,6 +1,6 @@
 'use client';
 import { useState } from 'react';
-import Nav from '../components/Nav';
+import Nav from '@/app/components/Nav';
 import { createClient } from '@/lib/supabase';
 export default function Admin() {
   const [tenantName, setTenantName] = useState('');
