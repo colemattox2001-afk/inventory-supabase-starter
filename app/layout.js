@@ -1,10 +1,15 @@
-export const metadata = { title: 'Inventory', description: 'Multi-tenant inventory with Supabase' };
+export const metadata = { title: 'Inventory', description: 'Clinic inventory' };
+
+import './globals.css';
+
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body style={{margin:0, background:'#0f0f0f', color:'#f5f5f5', fontFamily:'system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif'}}>
+      <body className="bg-[var(--bg)] text-[var(--text)]">
         <link rel="manifest" href="/manifest.json" />
-        <div style={{maxWidth:1000, margin:'0 auto', padding:16}}>{children}</div>
+        <div className="min-h-screen">
+          <div className="max-w-6xl mx-auto px-4 py-6">{children}</div>
+        </div>
       </body>
     </html>
   );
