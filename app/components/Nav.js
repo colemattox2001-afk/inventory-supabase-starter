@@ -42,6 +42,7 @@ export default function Nav() {
       <nav className="mt-4 flex gap-2">
         <Tab href="/items">Items</Tab>
         <Tab href="/needs">Needs</Tab>
+        <Tab href="/import">Import</Tab>
         <Tab href="/admin">Admin</Tab>
       </nav>
     </header>
