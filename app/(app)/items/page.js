@@ -1,6 +1,6 @@
 'use client';
 import { useEffect, useState } from 'react';
-import Nav from '../components/Nav';
+import Nav from '@/app/components/Nav';
 import { createClient } from '@/lib/supabase';
 export default function Items() {
   const [items, setItems] = useState([]);
